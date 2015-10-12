@@ -28,7 +28,7 @@ from django.core.mail import send_mail
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend' 
+EMAIL_BACKEND ='django.core.mail.backends.console.EmailBackend' 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
