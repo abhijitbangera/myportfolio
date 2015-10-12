@@ -21,9 +21,13 @@ def about(request):
 		    message = form.cleaned_data['message']
 		    sender = form.cleaned_data['sender']
 		    cc_myself = form.cleaned_data['cc_myself']
-		    recipients = ['info@example.com']
+		    recipients = ['abhijit.bangera@hotmail.com']
 		    if cc_myself:
 		        recipients.append(sender)
+		    print(subject)
+		    print(message)
+		    print(sender)
+		    print(recipients)
 
 		    send_mail(subject, message, sender, recipients)
 
